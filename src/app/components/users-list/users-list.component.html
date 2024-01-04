@@ -1,0 +1,14 @@
+<a routerLink="/"><== back</a>
+<h1>Task</h1>
+<button class="user-add" mat-raised-button (click)="openAddDialog(false)">Add User</button>
+<div class="users">
+  <ng-container *ngFor="let user of usersService.users">
+    <app-user-card
+      [id]="user.id"
+      [name]="user.name"
+      [email]="user.email"
+      [phone]="user.phone"
+      [website]="user.website"
+    ></app-user-card>
+  </ng-container>
+</div>

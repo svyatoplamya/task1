@@ -1,0 +1,15 @@
+h1 {
+  text-align: center;
+  color: #171615;
+}
+
+.users {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+}
+
+.user-add {
+  display: grid;
+  margin: auto;
+}
